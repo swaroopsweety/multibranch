@@ -14,7 +14,7 @@ pipeline {
         }
         stage('continuous deploy') {
             steps {
-                sh 'sshpass -p "sai" scp target/DemoATR.war sai@172.17.0.3:/opt/apache-tomcat-9.0.56/webapps' 
+                sh 'sshpass -p "jeevan" scp target/DemoATR.war jeevan@172.17.0.4:/opt/apache-tomcat-9.0.56/webapps' 
             }
         }
     }
